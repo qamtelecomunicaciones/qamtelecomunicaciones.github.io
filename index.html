@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alain Sosa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:930px)" />
+  </head>
+  <body>
+    <header>
+      <div class="header--title-container">
+        <h1>UNIVERSIDAD UNION BOLIVARIANA</h1>
+
+        <a href="#plans" class="header--button"
+          >Obersva QAM 16 Y 32<span></span
+        ></a>
+      </div>
+    </header>
+    <main>
+      <section class="main-exchange-container">
+        <div class="backgroundImg"></div>
+        <div class="main-exchange-container--title">
+          <h2>Modulacion QAM 16 Y 32</h2>
+          <p>
+            En resumen, la modulación QAM, incluyendo 16-QAM y 32-QAM, es
+            crucial en la actualidad por su capacidad de transmitir grandes
+            volúmenes de datos de manera eficiente. Sus aplicaciones abarcan
+            desde televisión digital y redes inalámbricas hasta
+            telecomunicaciones avanzadas y servicios de internet, adaptándose a
+            las demandas de alta velocidad y calidad en la transmisión de datos
+          </p>
+        </div>
+      </section>
+      <section class="main-product-detail">
+        <div class="product-detail--title">
+          <h2>MODULACION QAM</h2>
+          <p>Algunos beneficios</p>
+        </div>
+        <section class="product-cards--container">
+          <article class="product-detail--card">
+            <span class="check"></span>
+            <p class="product--card-title">Eficiencia espectral</p>
+            <p class="product--card-body">
+              es muy eficiente en términos de ancho de banda, ya que combina
+              cambios en la amplitud y fase de la portadora para transmitir más
+              bits por símbolo
+            </p>
+          </article>
+          <article class="product-detail--card">
+            <span class="check"></span>
+            <p class="product--card-title">Mayor Capacidad de Datos</p>
+            <p class="product--card-body">
+              Permite transmitir múltiples bits por símbolo, lo que aumenta la
+              tasa de transmisión de datos. Por ejemplo, 16-QAM transmite 4 bits
+              por símbolo y 32-QAM transmite 5 bits por símbolo.
+            </p>
+          </article>
+          <article class="product-detail--card">
+            <span class="check"></span>
+            <p class="product--card-title">Flexibilidad en la Modulación</p>
+            <p class="product--card-body">
+              Adaptacion de modulación (pasando de 16-QAM a 32-QAM o viceversa)
+              para equilibrar la capacidad de datos y la robustez frente al
+              ruido.
+            </p>
+          </article>
+          <article class="product-detail--card">
+            <span class="check"></span>
+            <p class="product--card-title">Televisión Digital</p>
+            <p class="product--card-body">
+              Utilizada en sistemas de televisión digital como DVB-T y ATSC para
+              transmitir señales de video y audio de alta calidad.
+            </p>
+          </article>
+          <article class="product-detail--card">
+            <span class="check"></span>
+            <p class="product--card-title">Wi-Fi y Redes Inalámbricas</p>
+            <p class="product--card-body">
+              Comúnmente empleada en estándares de Wi-Fi como 802.11n y 802.11ac
+              para ofrecer altas tasas de transferencia de datos.
+            </p>
+          </article>
+          <article class="product-detail--card">
+            <span class="check"></span>
+            <p class="product--card-title">Telecomunicaciones</p>
+            <p class="product--card-body">
+              Utilizada en enlaces de microondas y sistemas de comunicación de
+              fibra óptica donde se requiere una alta eficiencia espectral
+            </p>
+          </article>
+        </section>
+      </section>
+      <section class="bitcoin-img-container">
+        
+          <h2>Telecomunicaciones</h2>
+          
+        </div>
+      </section>
+      <section id="plans" class="main-plans-container">
+        <div class="plans--title">
+          <h2>Modulacion QAM 16 Y 32</h2>
+        </div>
+        <h2>Diagrama de Constelación QAM y Señal en el Tiempo</h2>
+        <br />
+        <label for="qamType">Tipo de QAM:</label>
+        <select id="qamType">
+          <option value="16">16-QAM</option>
+          <option value="32">32-QAM</option>
+          <option value="64">64-QAM</option>
+        </select>
+        <label for="noiseLevel">Nivel de Ruido:</label>
+        <input type="range" id="noiseLevel" min="0" max="20" value="0" />
+        <div id="constellation"></div>
+        <canvas id="signalChart" width="800" height="200"></canvas>
+      </section>
+    </main>
+    <footer>
+      <section class="left">
+        <ul>
+          <li><a href="https://www.ub.edu.bo/">Universidad Union Bolivariana </a></li>
+          <li><a href="https://www.facebook.com/universidadunionbolivariana">Facebook</a></li>
+          <li><a href="#">Contactos - 62400142</a></li>
+        </ul>
+      </section>
+      <section class="right"></section>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
